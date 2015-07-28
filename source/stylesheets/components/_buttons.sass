@@ -1,0 +1,26 @@
+.btn
+  height: rem(50)
+  line-height: rem(50)
+  color: white
+  background: $amarillo
+  border-radius: rem(5) 0 0 0
+  display: inline-block
+  text-align: center
+  padding: 0 rem(30)
+  text-transform: uppercase
+  text-decoration: none
+  font-size: rem(18)
+  +transition(all .3s)
+  &:hover
+    background: darken($amarillo, 10%)
+
+.btn-group
+  .btn
+    &:nth-of-type(2)
+      border-radius: 0 0 rem(5) 0
+      margin-left: rem(10)
+
+.down-btn
+  width: rem(48)
+  position: absolute
+  bottom: rem(30)
