@@ -2,7 +2,12 @@
   .wrapper
     %header
       .social-links
-        Stuff
+        = link_to '#' do
+          = image_tag 'images/email.png'
+        = link_to '#' do
+          = image_tag 'images/twitter.png'
+        = link_to '#' do
+          = image_tag 'images/linkedin.png'
     .logo
       = image_tag 'images/interactive-resources-logo.png'
     %ul
@@ -11,6 +16,6 @@
       %li
         = link_to 'Find Talent', '#'
       %li
-        = link_to 'Find About', '#'
+        = link_to 'About', '#'
       %li
-        = link_to 'Find Contact', '#'
+        = link_to 'Contact', '#'

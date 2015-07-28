@@ -13,3 +13,35 @@
     position: relative
     .btn-group
       margin: rem(30) 0 0 0
+
+.expertise
+  background: $oscuro-azul
+  color: white
+  text-align: center
+  padding: rem(60) 0 0 0
+  height: 100vh
+  h3
+    margin: rem(30) 0 rem(30) 0
+  article
+    +outer-container
+    figure
+      background: url('/images/expertise-bg.png') no-repeat
+      width: 100%
+      background-size: cover
+      height: auto
+      +clearfix()
+      dl
+        margin: 0
+        +span-columns(6)
+        text-align: right
+        &:nth-of-type(2)
+          text-align: left
+        dt
+          margin: 0 0 rem(5) 0
+          font:
+            size: rem(30)
+          text-transform: uppercase
+        dd
+          margin: 0
+          font:
+            size: rem(16)

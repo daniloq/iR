@@ -3,14 +3,35 @@ nav.main-nav
   top: 0
   right: 0
   left: 0
+  z-index: 2
   header
+    width: 100%
+    +clearfix()
     .social-links
       float: right
   .logo
     +span-columns(4)
+    vertical-align: middle
   ul
     margin: 0
     list-style: none
+    text-align: right
     +span-columns(8)
     li
       display: inline-block
+      line-height: rem(60)
+      a
+        font:
+          weight: 700
+        text-transform: uppercase
+        text-decoration: none
+        color: $oscuro-griso
+        margin-left: rem(60)
+
+.social-links
+  margin: rem(30) 0 0 0
+  a
+    display: inline-block
+    margin-left: rem(10)
+    img
+      width: rem(25)
