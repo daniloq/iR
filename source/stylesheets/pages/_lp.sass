@@ -22,20 +22,34 @@
   height: 100vh
   h3
     margin: rem(30) 0 rem(30) 0
+  p
+    margin-bottom: rem(40)
   article
     +outer-container
     figure
-      background: url('/images/expertise-bg.png') no-repeat
-      width: 100%
-      background-size: cover
-      height: auto
+      position: relative
+      background: url('/images/expertise-bg.png') top center no-repeat
+      background-size: 70%
       +clearfix()
       dl
-        margin: 0
         +span-columns(6)
+        margin: 0
+        padding: rem(210) rem(40) 0 0
         text-align: right
+        height: rem(500)
+        position: relative
         &:nth-of-type(2)
           text-align: left
+          padding: rem(210) 0 0 rem(41)
+          border-left: rem(1) dashed #4a83bd
+          &::before
+            content: ''
+            background: url('/images/triangles.png')
+            position: absolute
+            left: rem(-23)
+            background-size: rem(45) rem(24)
+            width: rem(45)
+            height: rem(24)
         dt
           margin: 0 0 rem(5) 0
           font:
@@ -45,3 +59,9 @@
           margin: 0
           font:
             size: rem(16)
+
+.bg-img
+  position: relative
+  width: rem(900)
+  top: rem(30)
+  margin: 0 auto
