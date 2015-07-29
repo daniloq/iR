@@ -4,21 +4,22 @@ nav.main-nav
   right: 0
   left: 0
   z-index: 2
+  padding: rem(20)
   header
     width: 100%
     +clearfix()
     .social-links
       float: right
   .logo
-    +span-columns(4)
-    vertical-align: middle
+    img
+      width: rem(290)
   ul
     margin: 0
     list-style: none
     text-align: right
     +span-columns(8)
     li
-      display: inline-block
+      display: block
       line-height: rem(60)
       a
         font:
@@ -27,11 +28,26 @@ nav.main-nav
         text-decoration: none
         color: $oscuro-griso
         margin-left: rem(60)
+  +media($medium)
+    padding: 0
+    .logo
+      +span-columns(4)
+      vertical-align: middle
+    ul
+      margin: 0
+      list-style: none
+      text-align: right
+      +span-columns(8)
+      li
+        display: inline-block
 
 .social-links
-  margin: rem(30) 0 0 0
-  a
-    display: inline-block
-    margin-left: rem(10)
-    img
-      width: rem(25)
+  display: none
+  +media($medium)
+    display: block
+    margin: rem(30) 0 0 0
+    a
+      display: inline-block
+      margin-left: rem(10)
+      img
+        width: rem(25)
