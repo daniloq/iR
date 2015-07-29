@@ -1,12 +1,18 @@
 footer.footer
   background: #1b4069
   padding: rem(60) 0
+  text-align: center
+  +media($medium)
+    text-align: left
   .logo
     display: inline-block
   dl
     margin: 0
     padding: 0
-    float: right
+    display: none
+    +media($medium)
+      display: block
+      float: right
     dt, dd
       margin: 0
     dt

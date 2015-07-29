@@ -9,8 +9,12 @@
     vertical-align: middle
     height: 100%
     width: 100%
-    text-align: center
+    text-align: left
     position: relative
+    padding: 0 rem(20)
+    +media($medium)
+      text-align: center
+      padding: 0
     .btn-group
       margin: rem(30) 0 0 0
 
@@ -18,7 +22,9 @@
   background: $oscuro-azul
   color: white
   text-align: center
-  padding: rem(60) 0
+  padding: rem(20)
+  +media($medium)
+    padding: rem(60) 0
   h3
     margin: rem(30) 0 rem(30) 0
   p
@@ -31,24 +37,6 @@
       background-size: 70%
       +clearfix()
       dl
-        +span-columns(6)
-        margin: 0
-        padding: rem(210) rem(40) 0 0
-        text-align: right
-        height: rem(500)
-        position: relative
-        &:nth-of-type(2)
-          text-align: left
-          padding: rem(210) 0 0 rem(41)
-          border-left: rem(1) dashed #4a83bd
-          &::before
-            content: ''
-            background: url('/images/triangles.png')
-            position: absolute
-            left: rem(-23)
-            background-size: rem(45) rem(24)
-            width: rem(45)
-            height: rem(24)
         dt
           margin: 0 0 rem(5) 0
           font:
@@ -58,6 +46,25 @@
           margin: 0
           font:
             size: rem(16)
+        +media($medium)
+          +span-columns(6)
+          margin: 0
+          padding: rem(210) rem(40) 0 0
+          text-align: right
+          height: rem(500)
+          position: relative
+          &:nth-of-type(2)
+            text-align: left
+            padding: rem(210) 0 0 rem(41)
+            border-left: rem(1) dashed #4a83bd
+            &::before
+              content: ''
+              background: url('/images/triangles.png')
+              position: absolute
+              left: rem(-23)
+              background-size: rem(45) rem(24)
+              width: rem(45)
+              height: rem(24)
 
 .locations
   img
@@ -68,15 +75,11 @@
     padding: rem(60) 0
     +clearfix
     li
-      display: inline-block
-      padding: 0 rem(40)
-      font:
-        size: rem(16)
-        style: italic
-        weight: 900
-      text-align: center
-      img
-        margin-bottom: rem(20)
+      display: block
+      border-bottom: rem(1) dashed #4a83bd
+      width: 30%
+      margin: 0 auto rem(30) auto
+      padding: 0 0 rem(15) 0
       &:nth-of-type(1)
         img
           width: rem(28)
@@ -92,6 +95,19 @@
       &:nth-of-type(5)
         img
           width: rem(28)
+      +media($medium)
+        display: inline-block
+        border-bottom: none
+        padding: 0 rem(40)
+        margin: 0
+        width: auto
+        font:
+          size: rem(16)
+          style: italic
+          weight: 900
+        text-align: center
+        img
+          margin-bottom: rem(20)
 
 .easter-egg
   background: #1b4069
