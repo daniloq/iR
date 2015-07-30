@@ -19,3 +19,103 @@
     line-height: rem(60)
   h2
     color: white
+
+.about-content
+  padding: rem(100) 0
+  color: $oscuro-griso
+  article
+    +clearfix
+    h3
+      font:
+        size: rem(32)
+      line-height: rem(40)
+      text-align: center
+    h5
+      font:
+        size: rem(36)
+        weight: 700
+      text-transform: uppercase
+      text-align: center
+      margin: rem(80)
+      border-bottom: rem(1) dashed $griso
+      padding-bottom: rem(30)
+    ul
+      margin: 0
+      list-style: none
+      li
+        font:
+          size: rem(26)
+          weight: 700
+        text-align: center
+        img
+          width: rem(90)
+          margin-bottom: rem(45)
+        span
+          display: block
+          font:
+            size: rem(20)
+            weight: 400
+          margin-top: rem(15)
+        +span-columns(4)
+  aside
+    +clearfix
+    padding: rem(180) 0
+    ul
+      margin: 0
+      list-style: none
+      li
+        line-height: rem(32)
+        border-bottom: rem(1) dashed $griso
+        padding-bottom: rem(30)
+        h3
+          margin-bottom: rem(1)
+        img
+          height: rem(300)
+        +span-columns(8)
+        &:nth-of-type(2)
+          +span-columns(4)
+          border: none
+          text-align: right
+
+.leadership
+  h3
+    margin-bottom: rem(30)
+  figure
+    margin: 0
+    +span-columns(3)
+    text-align: center
+    border: rem(2) dotted $griso
+    padding: rem(20) rem(40)
+    dl
+      margin: 0
+      dt
+        margin: 0
+        text-transform: uppercase
+        font-size: rem(20)
+      dd
+        font-size: rem(16)
+        margin: 0
+    a
+      color: $oscuro-griso
+      text-align: center
+      display: inline-block
+      text-decoration: none
+      padding: rem(15) rem(15) 0 rem(15)
+      img
+        width: rem(30)
+        fill: $oscuro-griso
+
+.our-locations
+  text-align: center
+  background: $claro
+  color: white
+  padding: rem(160) 0
+  .title
+    text-align: center
+  figure
+    ul
+      margin: 0
+      list-style: none
+      +clearfix
+      li
+        +span-columns(6)
