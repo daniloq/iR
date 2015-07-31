@@ -17,9 +17,70 @@
 .headline
   text-align: center
   background: $ligero-azul
+  padding: rem(30) 0
   h1
     -webkit-text-stroke: rem(2) rgba(255,255,255,1)
     line-height: rem(60)
     text-align: center
   h2
     color: white
+
+.talent-content
+  padding: rem(100) 0
+  article
+    ul
+      margin: 0
+      list-style: none
+      +clearfix
+      li
+        +media($medium)
+          +span-columns(6)
+    &:nth-of-type(2)
+      text-align: center
+      h3
+        text-align: center
+      dl
+        margin: rem(60) 0
+        +clearfix
+        dd
+          margin: 0
+          font:
+            size: rem(24)
+            style: italic
+            weight: 400
+          +span-columns(3)
+          img
+            width: rem(150)
+            margin-bottom: rem(30)
+
+.eye-icon
+  height: rem(65)
+
+.why-ir
+  background: #19528e
+  border-top: rem(8) solid $azul
+  color: white
+  padding: rem(100) 0
+  font-weight: 900
+  line-height: rem(35)
+  position: relative
+  article
+    position: relative
+    z-index: 1
+    +media($medium)
+      +span-columns(6)
+      padding: 0 rem(100)
+    span
+      display: block
+      font:
+        size: rem(28)
+        weight: 400
+  img
+    position: absolute
+    top: 20px
+    left: -50px
+    z-index: 0
+    height: rem(820)
+    &:nth-of-type(2)
+      right: -50px
+      left: auto
