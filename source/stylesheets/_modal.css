@@ -201,24 +201,24 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .ui.modal > .header {
-    padding: 0.75rem 1rem !important;
-    padding-right: 2.25rem !important;
+    padding: 0.75rem 1rem ;
+    padding-right: 2.25rem ;
   }
   .ui.modal > .content {
     display: block;
-    padding: 1rem !important;
+    padding: 1rem ;
   }
   .ui.modal > .close {
-    top: 0.5rem !important;
-    right: 0.5rem !important;
+    top: 0.5rem;
+    right: 0.5rem;
   }
   /*rtl:ignore*/
   .ui.modal .content > .image {
     display: block;
     max-width: 100%;
-    margin: 0em auto !important;
+    margin: 0em auto ;
     text-align: center;
-    padding: 0rem 0rem 1rem !important;
+    padding: 0rem 0rem 1rem ;
   }
   .ui.modal > .content > .image > i.icon {
     font-size: 5rem;
@@ -227,15 +227,15 @@
   /*rtl:ignore*/
   .ui.modal .content > .description {
     display: block;
-    width: 100% !important;
-    margin: 0em !important;
-    padding: 1rem 0rem !important;
+    width: 100% ;
+    margin: 0em ;
+    padding: 1rem 0rem ;
     box-shadow: none;
   }
-  
+
 /* Let Buttons Stack */
   .ui.modal > .actions {
-    padding: 1rem 1rem 0rem !important;
+    padding: 1rem 1rem 0rem ;
   }
   .ui.modal .actions > .buttons,
   .ui.modal .actions > .button {
@@ -294,7 +294,7 @@
 }
 .ui.scrolling.modal {
   position: static;
-  margin: 3.5rem auto !important;
+  margin: 3.5rem auto ;
 }
 @media only screen and (max-width: 992px) {
   .ui.scrolling.modal {
@@ -323,12 +323,12 @@
 ---------------*/
 
 .ui.fullscreen.modal {
-  width: 95% !important;
-  left: 2.5% !important;
+  width: 95% ;
+  left: 2.5% ;
   margin: 1em auto;
 }
 .ui.fullscreen.scrolling.modal {
-  left: 0em !important;
+  left: 0em ;
 }
 .ui.fullscreen.modal > .header {
   padding-right: 2.25rem;
@@ -429,4 +429,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
