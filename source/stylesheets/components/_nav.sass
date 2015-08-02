@@ -11,15 +11,24 @@ nav.main-nav
     .social-links
       float: right
   .logo
+    float: left
     img
-      width: rem(290)
+      width: rem(240)
+    +media($medium)
+      float: none
+      +span-columns(4)
+      img
+        width: rem(290)
   ul
-    margin: 0
     list-style: none
     text-align: right
-    +span-columns(8)
-    li
+    display: none
+    +media($medium)
       display: block
+      +span-columns(8)
+      margin: 0
+    li
+      display: inline-block
       line-height: rem(60)
       a
         font:
@@ -32,18 +41,6 @@ nav.main-nav
         &:hover
           border-bottom: rem(5) solid #285e98
           padding-bottom: rem(8)
-  +media($medium)
-    padding: 0
-    .logo
-      +span-columns(4)
-      vertical-align: middle
-    ul
-      margin: 0
-      list-style: none
-      text-align: right
-      +span-columns(8)
-      li
-        display: inline-block
 
 .social-links
   display: none

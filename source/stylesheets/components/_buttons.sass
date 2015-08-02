@@ -50,8 +50,10 @@
   right: rem(40)
   display: none
   text-indent: rem(-99999)
-  background: url('../images/up_btn.png') no-repeat
+  background: none
   background-size: contain
+  +media($medium)
+    background: url('../images/up_btn.png') no-repeat
 
 .upload
   background-color: $verde
@@ -63,3 +65,12 @@
   &:hover
     background-color: darken($verde, 10%)
     background-image: url('../images/icon_upload.svg')
+
+.mobile-btn
+  float: right
+  display: inline-block
+  margin-top: rem(8)
+  img
+    height: rem(25)
+  +media($medium)
+    display: none
