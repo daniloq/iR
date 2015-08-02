@@ -28,6 +28,10 @@ nav.main-nav
         text-decoration: none
         color: $oscuro-griso
         margin-left: rem(60)
+        +transition(all .3s)
+        &:hover
+          border-bottom: rem(5) solid #285e98
+          padding-bottom: rem(8)
   +media($medium)
     padding: 0
     .logo
