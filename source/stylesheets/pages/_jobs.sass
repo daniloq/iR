@@ -38,8 +38,12 @@
   background: url('../images/background_texture.jpg') top center no-repeat
   background-size: cover
   padding: rem(100) 0
+  position: relative
+  overflow: hidden
   article
     margin-bottom: rem(100)
+    z-index: 1
+    position: relative
   h3
     margin-bottom: rem(60)
   ul
@@ -53,12 +57,26 @@
     width: rem(90)
   .photo
     height: rem(140)
+  .bg-img
+    position: absolute
+    bottom: 0
+    z-index: 0
+    left: rem(-90)
+    height: rem(960)
+    bottom: rem(60)
+    &:nth-of-type(2)
+      left: auto
+      right: rem(-200)
+      height: rem(1000)
+      bottom: 0
   h5
     text-transform: none
     font:
       size: rem(20)
     margin: rem(20) 0 0 0
   aside
+    z-index: 1
+    position: relative
     +media($medium)
       +span-columns(4)
       +shift(4.2)
