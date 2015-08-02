@@ -27,15 +27,21 @@
 
 .jobs-content
   text-align: center
-  padding: rem(100) 0
+  padding: rem(100) 0 0 0
   img
     width: 100%
+  p
+    margin-bottom: rem(100)
 
 .help-talent
   text-align: center
   background: url('../images/background_texture.jpg') top center no-repeat
   background-size: cover
   padding: rem(100) 0
+  article
+    margin-bottom: rem(100)
+  h3
+    margin-bottom: rem(60)
   ul
     margin: 0
     list-style: none
@@ -52,3 +58,9 @@
     font:
       size: rem(20)
     margin: rem(20) 0 0 0
+  aside
+    +media($medium)
+      +span-columns(4)
+      +shift(4.2)
+    .btn
+      margin-top: rem(60)

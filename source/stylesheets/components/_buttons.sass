@@ -2,7 +2,7 @@
   height: rem(50)
   line-height: rem(50)
   color: white
-  background: $amarillo
+  background-color: $amarillo
   border-radius: rem(5) 0 rem(5) 0
   display: inline-block
   text-align: center
@@ -12,7 +12,7 @@
   font-size: rem(18)
   +transition(all .3s)
   &:hover
-    background: darken($amarillo, 10%)
+    background-color: darken($amarillo, 10%)
 
 .btn-group
   .btn
@@ -41,3 +41,14 @@
     img
       width: rem(48)
       margin-left: rem(-30)
+
+.upload
+  background-color: $verde
+  background-image: url('../images/icon_upload.svg')
+  background-repeat: no-repeat
+  background-size: 12%
+  background-position: 3% 40%
+  padding: 0 rem(10) rem(10) rem(45)
+  &:hover
+    background-color: darken($verde, 10%)
+    background-image: url('../images/icon_upload.svg')
