@@ -38,9 +38,11 @@
     +outer-container
     figure
       position: relative
-      background: url('/images/expertise-bg.png') top center no-repeat
-      background-size: 70%
+      background: none
       +clearfix()
+      +media($medium)
+        background: url('/images/expertise-bg.png') top center no-repeat
+        background-size: 70%
       dl
         dt
           margin: 0 0 rem(5) 0
@@ -51,6 +53,9 @@
           margin: 0
           font:
             size: rem(16)
+        &:nth-of-type(2)
+          padding: rem(20)
+          border-top: rem(1) dashed #4a83bd
         +media($medium)
           +span-columns(6)
           margin: 0
@@ -59,6 +64,7 @@
           height: rem(500)
           position: relative
           &:nth-of-type(2)
+            border-top: 0
             text-align: left
             padding: rem(210) 0 0 rem(41)
             border-left: rem(1) dashed #4a83bd
