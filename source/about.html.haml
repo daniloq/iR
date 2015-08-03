@@ -94,14 +94,24 @@ title: Interactive Resources | About
           %br
           email
 
-%section.our-locations.jacksonville
+%section.our-locations
   %article
     .wrapper
       %h5 Our Locations
       %h3 We serve over 200 clients in the U.S.
       %p including our very first, who is still with us today!
-      .title Newport Beach, CA
-      %figure
+      = link_to '#', class: 'np' do
+        .title Newport Beach, CA
+        %ul
+          %li
+            4590 McArthur Blvd.
+            %br
+            5th Floor
+            %br
+            Newport Beach, CA 92660
+          %li
+            949-335-7322
+      = link_to '#', class: 'jax active' do
         .title jacksonville, fl
         %ul
           %li
@@ -112,9 +122,34 @@ title: Interactive Resources | About
             Jacksonville, FL 33216
           %li
             949-821-8960
-      .title san diego, ca
-      .title nashville, tn
-      .title austin, tx
+      = link_to '#', class: 'sd' do
+        .title san diego, ca
+        %ul
+          %li
+            101 Broadway,
+            %br
+            3rd Floor
+            %br
+            San Diego, CA 92101
+          %li
+            619-564-6120
+      = link_to '#', class: 'na' do
+        .title nashville, tn
+        %ul
+          %li
+            3102 West End Ave.
+            %br
+            Ste. 400
+            %br
+            Nashville, TN 37203
+          %li
+            65-324-0844
+      = link_to '#', class: 'au' do
+        .title austin, tx
+        %ul
+          %li
+            coming soon
+
 
 = partial 'refills/cta'
 

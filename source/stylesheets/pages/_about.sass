@@ -143,6 +143,8 @@
   text-align: center
   color: white
   padding: rem(30) rem(15)
+  background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('/images/jacksonville.jpg') top center no-repeat
+  background-size: cover
   +media($medium)
     padding: rem(160) 0
   .title
@@ -158,19 +160,25 @@
     li
       +media($medium)
         +span-columns(6)
-  figure
-    background: rgba(255,255,255,0.2)
-    margin: 0 auto
-    width: 100%
-    padding: rem(30) 0
-    +media($medium)
-      width: rem(670)
+  a
+    text-decoration: none
+    color: white
+    outline: none
     ul
-      li
-        text-align: left
-        &:nth-of-type(2)
-          font:
-            size: rem(28)
-  &.jacksonville
-    background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('/images/jacksonville.jpg') top center no-repeat
-    background-size: cover
+      display: none
+    +clearfix
+    &.active
+      background: rgba(255,255,255,0.2)
+      margin: 0 auto
+      width: 100%
+      padding: rem(30) 0
+      display: block
+      ul
+        display: block
+        li
+          text-align: left
+          &:nth-of-type(2)
+            font:
+              size: rem(28)
+      +media($medium)
+        width: rem(670)
