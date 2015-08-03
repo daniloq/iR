@@ -107,15 +107,31 @@
 
 .our-locations
   text-align: center
-  background: $claro
   color: white
   padding: rem(160) 0
   .title
     text-align: center
+  p
+    border-bottom: rem(1) dashed rgba(255,255,255,0.8)
+    margin-bottom: rem(60)
+    padding-bottom: rem(30)
+  ul
+    margin: 0
+    list-style: none
+    +clearfix
+    li
+      +span-columns(6)
   figure
+    background: rgba(255,255,255,0.2)
+    margin: 0 auto
+    width: rem(670)
+    padding: rem(30) 0
     ul
-      margin: 0
-      list-style: none
-      +clearfix
       li
-        +span-columns(6)
+        text-align: left
+        &:nth-of-type(2)
+          font:
+            size: rem(28)
+  &.jacksonville
+    background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('/images/jacksonville.jpg') top center no-repeat
+    background-size: cover
