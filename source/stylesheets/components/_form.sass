@@ -1,0 +1,67 @@
+.form
+  height: 100% !important
+  min-height: 100%
+  background-color: white !important
+  margin: 0 !important
+  left: 0 !important
+  right: 0 !important
+  bottom: 0 !important
+  width: 100% !important
+  .close
+    top: rem(10) !important
+  +clearfix
+
+form
+  padding: rem(100) 0
+  .form-field
+    display: inline-block
+  label
+    font:
+      size: rem(20)
+      weight: 300
+      style: italic
+    color: $oscuro-griso
+    display: block
+    margin-bottom: rem(15)
+    span
+      color: $rojo
+  input, select
+    height: rem(50)
+    line-height: rem(50)
+    border-radius: 0
+    border: rem(1) dotted $griso
+    // margin: 0 rem(30) rem(20) 0
+    width: 100%
+    padding-left: rem(15)
+    background-color: white
+    background-image: none
+    -webkit-appearance: none
+  fieldset
+    border: none
+    margin-bottom: rem(15)
+    +row
+    &:nth-of-type(1)
+      .form-field
+        +media($medium)
+          +span-columns(3)
+    &:nth-of-type(2)
+      .form-field
+        +media($medium)
+          +span-columns(4)
+    &:nth-of-type(3)
+      .form-field
+        +media($medium)
+          +span-columns(5)
+
+input[type='submit']
+  background-color: $oscuro-azul
+  color: white
+  width: auto
+  border: none
+  text-transform: uppercase
+  background-image: url('../images/send-icon.png')
+  background-repeat: no-repeat
+  background-size: 30%
+  background-position: 80% 50%
+  padding: 0 rem(60) 0 rem(20)
+  margin: rem(30) 0
