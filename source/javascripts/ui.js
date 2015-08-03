@@ -17,7 +17,7 @@ $(document).ready(function(){
   // Locations
   $('.sd').on('click', function () {
     $(".our-locations").css({
-      "background": "linear-gradient(rgba(194, 139, 84, 0.7), rgba(194, 139, 84, 0.7)), url('/images/sandiego.jpg') top center no-repeat",
+      "background": "linear-gradient(rgba(194, 139, 84, 0.7), rgba(194, 139, 84, 0.7)), url('../images/sandiego.jpg') top center no-repeat",
       "background-size": "cover"
     });
     $(this).toggleClass('active').siblings().removeClass('active');
@@ -25,7 +25,7 @@ $(document).ready(function(){
   });
   $('.na').on('click', function () {
     $(".our-locations").css({
-      "background": "linear-gradient(rgba(64, 112, 160, 0.7), rgba(64, 112, 160, 0.7)), url('/images/nashville.jpg') top center no-repeat",
+      "background": "linear-gradient(rgba(64, 112, 160, 0.7), rgba(64, 112, 160, 0.7)), url('../images/nashville.jpg') top center no-repeat",
       "background-size": "cover"
     });
     $(this).toggleClass('active').siblings().removeClass('active');
@@ -33,7 +33,7 @@ $(document).ready(function(){
   });
   $('.np').on('click', function () {
     $(".our-locations").css({
-      "background": "linear-gradient(rgba(88, 158, 166, 0.7), rgba(88, 158, 166, 0.7)), url('/images/newportbeach.jpg') top center no-repeat",
+      "background": "linear-gradient(rgba(88, 158, 166, 0.7), rgba(88, 158, 166, 0.7)), url('../images/newportbeach.jpg') top center no-repeat",
       "background-size": "cover"
     });
     $(this).toggleClass('active').siblings().removeClass('active');
@@ -41,7 +41,7 @@ $(document).ready(function(){
   });
   $('.au').on('click', function () {
     $(".our-locations").css({
-      "background": "linear-gradient(rgba(178, 63, 59, 0.7), rgba(178, 63, 59, 0.7)), url('/images/austin.jpg') top center no-repeat",
+      "background": "linear-gradient(rgba(178, 63, 59, 0.7), rgba(178, 63, 59, 0.7)), url('../images/austin.jpg') top center no-repeat",
       "background-size": "cover"
     });
     $(this).toggleClass('active').siblings().removeClass('active');
@@ -49,7 +49,7 @@ $(document).ready(function(){
   });
   $('.jax').on('click', function () {
     $(".our-locations").css({
-      "background": "linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('/images/jacksonville.jpg') top center no-repeat",
+      "background": "linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville.jpg') top center no-repeat",
       "background-size": "cover"
     });
     $(this).toggleClass('active').siblings().removeClass('active');
