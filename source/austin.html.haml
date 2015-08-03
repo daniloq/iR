@@ -1,0 +1,82 @@
+---
+title: Interactive Resources
+---
+
+= partial 'refills/nav'
+
+%section.hero.austin
+  %article
+    %h1
+      Relationships.
+      %br
+      Talent.
+      %br
+      Results
+    %h2 iR connects talented professionals across the U.S. to build great career, teams and companies.
+    .btn-group
+      = link_to 'Find Jobs', 'jobs.html', class: 'btn'
+      = link_to 'Find Talent', 'talent.html', class: 'btn'
+    = link_to '#', class: 'down-btn' do
+      = image_tag 'images/down_btn.png'
+
+%section.expertise
+  %article
+    %h5 Expertise
+    %h3 Technical &amp; Professional Staffing
+    %p Everyone faces a different set of challenges. We tailor our approach to meet your specific needs.
+    %figure
+      %dl
+        %dt Tech
+        %dd
+          Services within the full software
+          %br
+          development lifecycle
+      %dl
+        %dt Pro
+        %dd
+          Accounting, finance, customer service,
+          %br
+          marketing and operations support
+      %br
+      = link_to 'Upload Your Resume', '#', class: 'btn'
+
+%section.locations
+  %article
+    %h5 Locations
+    %h3 Local Service. National reach.
+    %p We’re putting people to work, all across the country, all the time.
+    .wrapper
+      = image_tag 'images/map.gif'
+    %ul
+      %li
+        = image_tag 'images/map-icon1.png'
+        %br
+        Newport Beach, CA
+        %br
+        949-335-7322
+      %li
+        = image_tag 'images/map-icon4.png'
+        %br
+        San Diego, CA
+        %br
+        619-564-6120
+      %li
+        = image_tag 'images/map-icon5.png'
+        %br
+        Austin, TX
+        %br
+        %small (coming soon)
+      %li
+        = image_tag 'images/map-icon2.png'
+        %br
+        Nashville, TN
+        %br
+        615-324-0844
+      %li
+        = image_tag 'images/map-icon3.png'
+        %br
+        Jacksonville, FL
+        %br
+        904-821-8960
+
+= partial 'refills/footer'
