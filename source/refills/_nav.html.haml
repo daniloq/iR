@@ -19,7 +19,7 @@
       %li
         = link_to 'About', 'about.html'
       %li
-        = link_to 'Contact', '#'
+        = link_to 'Contact', '#', class: 'form-btn'
     = link_to '#', class: 'mobile-btn' do
       = image_tag 'images/mobile-nav-icon.png'
     .ui.basic.modal.mobile-nav
@@ -30,8 +30,14 @@
       = link_to 'About', 'about.html'
       = link_to 'Contact', '#'
 
+= partial 'refills/form'
+
 :javascript
   // Mobile Nav
-  $('.ui.modal')
+  $('.ui.modal.mobile-nav')
     .modal('attach events', '.mobile-btn', 'show')
+  ;
+  // Mobile Nav
+  $('.ui.modal.form')
+    .modal('attach events', '.form-btn', 'show')
   ;

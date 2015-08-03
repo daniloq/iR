@@ -1,0 +1,57 @@
+.ui.basic.modal.form
+  %form
+    %label
+      first name
+      %span *
+    %input{type: 'text'}
+    %label
+      last name
+      %span *
+    %input{type: 'text'}
+    %label
+      email
+      %span *
+    %input{type: 'email'}
+    %label
+      phone
+      %span *
+    %input{type: 'phone'}
+    %label
+      upload resume
+      %span *
+    %input
+    %label
+      looking for opportunitues in:
+    %select
+      %option Jacksonville, FL
+      %option Newport Beach, CA
+      %option San Diego, CA
+      %option Nashville, TN
+      %option All locations
+    %label
+      Click on your career interest (tap to select / clear)
+    = link_to 'Accounting', '#', class: 'toggle-btn'
+    = link_to 'Application Development', '#', class: 'toggle-btn'
+    = link_to 'Business Analysis', '#', class: 'toggle-btn'
+    = link_to 'Business Intelligence', '#', class: 'toggle-btn'
+    = link_to 'Claims Processing', '#', class: 'toggle-btn'
+    = link_to 'Collections', '#', class: 'toggle-btn'
+    = link_to 'Customer Service', '#', class: 'toggle-btn'
+    = link_to 'Database Adminitration', '#', class: 'toggle-btn'
+    = link_to 'Database Analysis', '#', class: 'toggle-btn'
+    = link_to 'Default Servicing', '#', class: 'toggle-btn'
+    = link_to 'Network Admin', '#', class: 'toggle-btn'
+    = link_to 'Development Management', '#', class: 'toggle-btn'
+    = link_to 'Finance', '#', class: 'toggle-btn'
+    = link_to 'Licensed Agents', '#', class: 'toggle-btn'
+    = link_to 'Loan Processors', '#', class: 'toggle-btn'
+    = link_to 'Network Architecture', '#', class: 'toggle-btn'
+    = link_to 'Project Analysis', '#', class: 'toggle-btn'
+    = link_to 'Project Management', '#', class: 'toggle-btn'
+    = link_to 'Quality Assurance', '#', class: 'toggle-btn'
+    = link_to 'Systems Administration', '#', class: 'toggle-btn'
+    = link_to 'Technical Support', '#', class: 'toggle-btn'
+    = link_to 'Technical Writing', '#', class: 'toggle-btn'
+    = link_to 'Treasury', '#', class: 'toggle-btn'
+    = link_to 'Underwriting', '#', class: 'toggle-btn'
+    %input{type: 'submit', value: 'Send'}
