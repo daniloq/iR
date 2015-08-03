@@ -45,10 +45,18 @@
         &:nth-of-type(2)
           text-align: right
     img
-      width: 100%
-      height: auto
       &.eye-icon
         height: rem(65)
+        width: auto
+      &.people
+        height: auto
+        width: 100%
+        +media($medium)
+          height: rem(380)
+          width: auto
+      &.signature
+        height: rem(120)
+        margin: rem(-50) rem(-110) 0 0
     &:nth-of-type(2)
       text-align: center
       padding-top: rem(100)
@@ -71,16 +79,6 @@
             img
               width: rem(150)
               margin: 0 0 rem(30) 0
-
-.eye-icon
-  height: rem(65)
-
-.people
-  height: rem(380)
-
-.signature
-  height: rem(120)
-  margin: rem(-50) rem(-110) 0 0
 
 .divider
   display: none

@@ -13,6 +13,7 @@
 
 form
   padding: rem(40) 0
+  background: white
   .form-field
     display: inline-block
   label
@@ -22,9 +23,11 @@ form
       style: italic
     color: $oscuro-griso
     display: block
-    margin-bottom: rem(15)
+    margin: rem(15) 0
     span
       color: $rojo
+    +media($medium)
+      margin: 0 0 rem(15) 0
   input, select
     height: rem(50)
     line-height: rem(50)
@@ -38,18 +41,23 @@ form
     -webkit-appearance: none
   fieldset
     border: none
-    margin-bottom: rem(15)
+    margin: rem(15) 0
+    +media($medium)
+      margin: 0 0 rem(15) 0
     +row
     &:nth-of-type(1)
       .form-field
+        width: 100%
         +media($medium)
           +span-columns(3)
     &:nth-of-type(2)
       .form-field
+        width: 100%
         +media($medium)
           +span-columns(4)
     &:nth-of-type(3)
       .form-field
+        width: 100%
         +media($medium)
           +span-columns(5)
 
