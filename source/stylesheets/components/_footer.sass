@@ -1,11 +1,14 @@
 footer.footer
   background: #1b4069
-  padding: rem(60) 0
+  padding: rem(30) rem(15)
   text-align: center
   +media($medium)
+    padding: rem(60) 0
     text-align: left
   .logo
     display: inline-block
+    img
+      width: 100%
   dl
     margin: 0
     padding: 0
@@ -20,6 +23,21 @@ footer.footer
     dd
       color: $azul
       font-size: rem(14)
+  ul
+    display: block
+    margin: rem(30) 0 0 0
+    padding: 0
+    list-style: none
+    li
+      +span-columns(6)
+      a
+        color: white
+        text-transform: uppercase
+        text-decoration: none
+      img
+        margin-bottom: rem(15)
+    +media($medium)
+      display: none
 
 .easter-egg
   background: #1b4069
