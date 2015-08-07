@@ -30,8 +30,12 @@
           %label
             upload resume
             %span *
-          %input.upload-input
-          %button.upload-alt
+          -# %input.upload-input
+          -# %button.upload-alt
+          %input#uploadFile.upload-input{disabled: 'disabled', placeholder: 'Choose File'}
+          .fileUpload
+            %span.upload-alt Upload
+            %input#uploadBtn.upload{type: 'file'}
         .form-field
           %label
             Select a city:

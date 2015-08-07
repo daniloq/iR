@@ -70,4 +70,9 @@ $(document).ready(function(){
   $('.toggle-btn').click(function () {
     $(this).toggleClass('active');
   });
+
+  // File Upload button
+  document.getElementById('upload-alt').onchange = function () {
+    document.getElementById('uploadFile').value = this.value;
+  };
 });
