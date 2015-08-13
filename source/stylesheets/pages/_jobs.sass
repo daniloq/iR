@@ -49,6 +49,12 @@
     +media($medium)
       display: block
       width: 100%
+    &.hide-large
+      display: inline-block
+      width: 100%
+      margin: rem(30) 0
+      +media($medium)
+        display: none
   p
     margin-bottom: 0
     +media($medium)
