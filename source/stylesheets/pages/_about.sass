@@ -149,12 +149,16 @@
   text-align: center
   color: white
   padding: rem(30) rem(15)
-  background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville.jpg') top center no-repeat
+  background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat
   background-size: cover
   +media($medium)
     padding: rem(160) 0
   .title
     text-align: center
+    display: inline-block
+    +transition(all .3s)
+    &:hover
+      font-size: rem(42)
   p
     border-bottom: rem(1) dashed rgba(255,255,255,0.8)
     margin-bottom: rem(60)
@@ -187,6 +191,9 @@
             margin-top: rem(15)
             font:
               size: rem(22)
+      .title
+        &:hover
+          font-size: rem(36)
       +media($medium)
         width: rem(670)
         ul
