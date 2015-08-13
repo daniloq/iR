@@ -56,6 +56,10 @@
         background: url('../images/expertise-bg.png') top center no-repeat
         background-size: 70%
       dl
+        height: rem(280)
+        width: rem(280)
+        padding: rem(60)
+        margin: 0 auto
         dt
           margin: 0 0 rem(5) 0
           font:
@@ -65,21 +69,31 @@
           margin: 0
           font:
             size: rem(16)
+        &:nth-of-type(1)
+          background: url('../images/web-bg-mobile.png') no-repeat
+          background-size: cover
         &:nth-of-type(2)
-          padding: rem(20)
-          border-top: rem(1) dashed #4a83bd
+          padding: rem(60)
+          margin-left: 0
+          background: url('../images/tech-mobile-bg.png') no-repeat
+          background-size: cover
+          margin: 0 auto
         +media($medium)
           +span-columns(6)
           margin: 0
-          padding: rem(210) rem(40) 0 0
+          padding: rem(180) rem(40) 0 0
           text-align: right
           height: rem(500)
           position: relative
+          &:nth-of-type(1)
+            background: none
           &:nth-of-type(2)
+            background: none
             border-top: 0
             text-align: left
-            padding: rem(210) 0 0 rem(41)
+            padding: rem(180) 0 0 rem(41)
             border-left: rem(1) dashed #4a83bd
+            margin-left: rem(13)
             &::before
               content: ''
               background: url('../images/triangles.png')
@@ -88,6 +102,7 @@
               background-size: rem(45) rem(24)
               width: rem(45)
               height: rem(24)
+              top: rem(219)
 
 .locations
   img
