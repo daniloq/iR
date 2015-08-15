@@ -27,7 +27,7 @@
   h1
     color: white
     -webkit-text-fill-color: transparent
-    -webkit-text-stroke-width: rem(2)
+    -webkit-text-stroke-width: rem(1)
     -webkit-text-stroke-color: rgba(255,255,255,0.8)
     line-height: rem(60)
     text-align: center
@@ -36,6 +36,7 @@
     margin: 0 0 rem(5) 0
     +media($medium)
       font-size: rem(36)
+      -webkit-text-stroke-width: rem(2)
   h2
     color: white
 
@@ -59,16 +60,22 @@
     margin-bottom: 0
     +media($medium)
       margin-bottom: rem(100)
+  a
+    color: #2e639f
 
 .help-talent
   text-align: center
-  background: url('../images/background_texture.jpg') top center no-repeat
+  background: url('../images/background_texture@2x.jpg') top center no-repeat
   background-size: cover
   position: relative
   overflow: hidden
   padding: rem(30) rem(15)
+  .btn
+    display: none
   +media($medium)
     padding: rem(100) 0 0 0
+    .btn
+      display: inline-block
   article
     margin-bottom: 0
     z-index: 1

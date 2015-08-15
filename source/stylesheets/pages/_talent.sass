@@ -20,11 +20,14 @@
     background: $ligero-azul
     padding: rem(30) 0
     h1
-      -webkit-text-stroke: rem(2) rgba(255,255,255,1)
+      -webkit-text-stroke: rem(1) rgba(255,255,255,1)
       text-align: center
       margin: 0 0 rem(5) 0
     h2
       color: white
+    +media($medium)
+      h1
+        -webkit-text-stroke: rem(2) rgba(255,255,255,1)
 
 .talent-content
   padding: rem(150) rem(15) rem(30) rem(15)
@@ -98,6 +101,7 @@
   +media($medium)
     padding: 0
   dl
+    margin: 0 0 rem(60) 0
     dt
       margin: 0 0 rem(5) 0
       font:

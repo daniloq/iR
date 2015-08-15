@@ -40,8 +40,12 @@
   color: white
   text-align: center
   padding: rem(20)
+  .btn
+    display: none
   +media($medium)
     padding: rem(60) 0
+    .btn
+      display: inline-block
   h3
     margin: rem(30) 0 rem(30) 0
   p
@@ -105,6 +109,9 @@
               top: rem(219)
 
 .locations
+  a
+    color: white
+    text-decoration: none
   img
     width: 80%
   ul
@@ -153,7 +160,7 @@
   background: $azul
   color: white
   padding: rem(30) 0
-  text-align: center
+  display: none
   h3
     margin: 0 0 rem(8) 0
     line-height: 1
@@ -164,4 +171,4 @@
   a
     color: white
   +media($medium)
-    text-align: left
+    display: block
