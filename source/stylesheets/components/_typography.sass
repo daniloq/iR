@@ -4,7 +4,7 @@ h1
     size: rem(26)
   text-transform: uppercase
   margin: 0 0 rem(20) 0
-  color: rgba(0,0,0,0.8)
+  color: rgba(255,255,255,0.9)
   -webkit-text-fill-color: transparent
   -webkit-text-stroke-width: rem(1)
   -webkit-text-stroke-color: rgba(0,0,0,0.8)
@@ -17,6 +17,10 @@ h1
     font-size: rem(47)
     line-height: rem(75)
     -webkit-text-stroke-width: rem(2)
+
+@-moz-document url-prefix()
+  h1
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 
 h2
   color: rgba(0,0,0,0.8)
