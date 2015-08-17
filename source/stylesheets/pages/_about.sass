@@ -157,7 +157,7 @@
 .our-locations
   text-align: center
   color: white
-  padding: rem(30) rem(15)
+  padding: rem(30) 0
   // background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat
   // background-size: cover
   position: relative
@@ -197,6 +197,8 @@
       padding: rem(30) 0
       display: block
       cursor: default
+      .title
+        font-size: rem(20)
       ul
         display: block
         li
@@ -205,12 +207,10 @@
             margin-top: rem(15)
             font:
               size: rem(22)
-      .title
-        &:hover
-          font-size: rem(36)
-          cursor: default
       +media($medium)
         width: rem(670)
+        .title
+          font-size: rem(32)
         ul
           li
             &:nth-of-type(2)
