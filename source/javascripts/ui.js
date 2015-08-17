@@ -3,9 +3,9 @@ $(document).ready(function(){
   //Check to see if the window is top if not then display button
   $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
-      $('.scrollToTop').fadeIn();
+      $('.scrollToTop').fadeIn(800);
     } else {
-      $('.scrollToTop').fadeOut();
+      $('.scrollToTop').fadeOut(800);
     }
   });
   //Click event to scroll to top
@@ -16,61 +16,33 @@ $(document).ready(function(){
 
   // Locations
   $('.sd').on('click', function () {
-    // $(".our-locations").css({
-    //   "background": "linear-gradient(rgba(194, 139, 84, 0.7), rgba(194, 139, 84, 0.7)), url('../images/sandiego@2x.jpg') top center no-repeat",
-    //   "background-size": "cover"
-    // });
-    $('.our-locations').fadeOut(function() {
-      $(this).css({
-        "background": "linear-gradient(rgba(194, 139, 84, 0.7), rgba(194, 139, 84, 0.7)), url('../images/sandiego@2x.jpg') top center no-repeat",
-        "background-size": "cover"
-      });
-    }).fadeIn(300);
     $(this).toggleClass('active').siblings().removeClass('active');
+    $('.nash, .aus, .newp, .jack').fadeOut(800);
+    $('.sand').fadeIn(800);
     return false;
   });
   $('.na').on('click', function () {
-    $('.our-locations').fadeTo('slow', 0.2, function()
-    {
-      $(this).css({
-        "background": "linear-gradient(rgba(64, 112, 160, 0.7), rgba(64, 112, 160, 0.7)), url('../images/nashville@2x.jpg') top center no-repeat",
-        "background-size": "cover"
-      });
-    }).fadeTo('slow', 1);
     $(this).toggleClass('active').siblings().removeClass('active');
+    $('.aus, .newp, .jack, .sand').fadeOut(800);
+    $('.nash').fadeIn(800);
     return false;
   });
   $('.np').on('click', function () {
-    $('.our-locations').fadeTo('slow', 0.2, function()
-    {
-      $(this).css({
-        "background": "linear-gradient(rgba(88, 158, 166, 0.7), rgba(88, 158, 166, 0.7)), url('../images/newportbeach@2x.jpg') top center no-repeat",
-        "background-size": "cover"
-      });
-    }).fadeTo('slow', 1);
     $(this).toggleClass('active').siblings().removeClass('active');
+    $('.nash, .aus, .jack, .sand').fadeOut(800);
+    $('.newp').fadeIn(800);
     return false;
   });
   $('.au').on('click', function () {
-    $('.our-locations').fadeTo('slow', 0.2, function()
-    {
-      $(this).css({
-        "background": "linear-gradient(rgba(178, 63, 59, 0.7), rgba(178, 63, 59, 0.7)), url('../images/austin@2x.jpg') top center no-repeat",
-        "background-size": "cover"
-      });
-    }).fadeTo('slow', 1);
     $(this).toggleClass('active').siblings().removeClass('active');
+    $('.nash, .newp, .jack, .sand').fadeOut(800);
+    $('.aus').fadeIn(800);
     return false;
   });
   $('.jax').on('click', function () {
-    $('.our-locations').fadeTo('slow', 0.2, function()
-    {
-      $(this).css({
-        "background": "linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat",
-        "background-size": "cover"
-      });
-    }).fadeTo('slow', 1);
     $(this).toggleClass('active').siblings().removeClass('active');
+    $('.nash, .aus, .newp, .sand').fadeOut(800);
+    $('.jack').fadeIn(800);
     return false;
   });
 

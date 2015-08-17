@@ -158,10 +158,14 @@
   text-align: center
   color: white
   padding: rem(30) rem(15)
-  background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat
-  background-size: cover
+  // background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat
+  // background-size: cover
+  position: relative
   +media($medium)
     padding: rem(160) 0
+  article
+    z-index: 1
+    position: relative
   .title
     text-align: center
     display: inline-block
@@ -213,3 +217,47 @@
               margin-top: 0
               font:
                 size: rem(28)
+.jack
+  background: linear-gradient(rgba(179, 154, 36, 0.7), rgba(179, 154, 36, 0.7)), url('../images/jacksonville@2x.jpg') top center no-repeat
+  background-size: cover
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  z-index: 0
+
+.sand
+  background: linear-gradient(rgba(194, 139, 84, 0.7), rgba(194, 139, 84, 0.7)), url('../images/sandiego@2x.jpg') top center no-repeat
+  background-size: cover
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  z-index: 0
+
+.nash
+  background: linear-gradient(rgba(64, 112, 160, 0.7), rgba(64, 112, 160, 0.7)), url('../images/nashville@2x.jpg') top center no-repeat
+  background-size: cover
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  z-index: 0
+
+.newp
+  background: linear-gradient(rgba(88, 158, 166, 0.7), rgba(88, 158, 166, 0.7)), url('../images/newportbeach@2x.jpg') top center no-repeat
+  background-size: cover
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  z-index: 0
+
+.aus
+  background: linear-gradient(rgba(178, 63, 59, 0.7), rgba(178, 63, 59, 0.7)), url('../images/austin@2x.jpg') top center no-repeat
+  background-size: cover
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  z-index: 0
