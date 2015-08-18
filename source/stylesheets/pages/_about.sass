@@ -16,7 +16,7 @@
     border-bottom: rem(8) solid $oscuro-azul
   h1
     -webkit-text-stroke: rem(1) rgba(255,255,255,1)
-    line-height: rem(60)
+    line-height: rem(30)
     text-align: center
   h2
     color: white
@@ -28,6 +28,7 @@
     h1
       text-align: left
       -webkit-text-stroke: rem(2) rgba(255,255,255,1)
+      line-height: rem(60)
     h2
       text-align: left
 
@@ -40,7 +41,7 @@
         color: #DAD1CA
 .about-content
   color: $oscuro-griso
-  padding: rem(30) rem(15)
+  padding: rem(40) rem(15)
   +media($medium)
     padding: rem(100) 0
   article
@@ -60,7 +61,7 @@
         weight: 700
       text-transform: uppercase
       text-align: center
-      margin: rem(30)
+      margin: rem(60) rem(30) rem(30) rem(30)
       border-bottom: rem(1) dashed $griso
       padding-bottom: rem(30)
       +media($medium)
@@ -106,9 +107,11 @@
         font:
           size: rem(16)
         h3
-          margin-bottom: rem(1)
+          margin: rem(60) 0 rem(30) 0
           font:
             size: rem(32)
+          +media($medium)
+            margin: 0 0 rem(1) 0
         img
           height: rem(300)
         +media($medium)

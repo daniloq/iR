@@ -37,14 +37,21 @@ footer.footer
         text-transform: uppercase
         text-decoration: none
       img
-        margin-bottom: rem(15)
+        margin-bottom: rem(0)
     +media($medium)
       display: none
 
 .easter-egg
   background: #1b4069
-  padding-top: rem(20)
+  padding: 0 rem(30) rem(30) rem(30)
   img
     width: 100%
+  span
+    color: rgba(255,255,255,0.4)
+    font-size: rem(12)
+    text-align: center
+    display: block
   +media($medium)
-    padding-top: rem(100)
+    padding: rem(100) 0 0 0
+    span
+      display: none
