@@ -2,6 +2,8 @@
   .close
     = image_tag 'images/close-icon-black.png'
   .wrapper
+    %h3 Ready for a career move?
+    %p Tell us more and we’ll get back to you within 24 hours.
     %form
       %fieldset
         .form-field
@@ -38,17 +40,17 @@
             %input#uploadBtn.upload{type: 'file'}
         .form-field
           %label
-            Select a city:
+            Where would you like to work?
           %select
             %option Jacksonville, FL
             %option Newport Beach, CA
             %option San Diego, CA
             %option Nashville, TN
-            %option All locations
+            %option All cities
       %fieldset
         .form-field
           %label
-            Click on your career interest (tap to select / clear)
+            Click on your career interests (tap to select / clear)
           = link_to 'Accounting', '#', class: 'toggle-btn'
           = link_to 'Application Development', '#', class: 'toggle-btn'
           = link_to 'Business Analysis', '#', class: 'toggle-btn'
