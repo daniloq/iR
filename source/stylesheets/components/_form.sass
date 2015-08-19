@@ -14,12 +14,23 @@
   p
     color: $oscuro-griso
     margin: 0
+    padding: 0 rem(15)
+    text-align: center
   h3
     color: $oscuro-griso
     margin: rem(45) 0 0 0
+    padding: 0 rem(15)
+    text-align: center
   .close
     top: rem(10) !important
   +clearfix
+  +media($medium)
+    p
+      padding: 0
+      text-align: left
+    h3
+      padding: 0
+      text-align: left
 
 form
   padding: rem(40) 0
