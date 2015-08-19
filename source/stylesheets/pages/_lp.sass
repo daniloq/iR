@@ -1,9 +1,11 @@
 .hero
   background: url('../images/jacksonville@2x.jpg') top center no-repeat
   background-size: cover
-  height: 100vh
+  height: 600px
   width: 100%
   display: table
+  +media($medium)
+    height: 100vh
   &.nashville
     background: url('../images/nashville@2x.jpg') top center no-repeat
     background-size: cover
